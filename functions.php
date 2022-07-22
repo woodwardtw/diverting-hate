@@ -48,7 +48,8 @@ foreach ( $understrap_includes as $file ) {
 
 function divh_home_posts($category){
 	$args = array(
-		'category_name' => $category
+		'category_name' => $category,
+		'posts_per_page' => '4'
 	);
 	$the_query = new WP_Query( $args );
 
