@@ -1,9 +1,4 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
-body {
-  margin: 30px;
-  background: #fff;
-}
-
 h1 {
   font-size: 4rem;
   line-height: 1;
@@ -16,7 +11,7 @@ h2 {
   line-height: 1;
   margin: 30px 30px 0 30px;
   display: inline-block;
-  color: $darkblue;
+  color: #1A374D;
 }
 
 p {
@@ -43,6 +38,30 @@ p {
 .color {
   flex: 1;
   height: 20px;
+}
+
+.blue-theme h1 {
+  color: #1A374D;
+}
+
+.dark-blue {
+  background-color: #1A374D;
+}
+
+.slate {
+  background-color: #406882;
+}
+
+.lighter-blue {
+  background-color: #6998AB;
+}
+
+.lightest-blue {
+  background-color: #B1D0E0;
+}
+
+.different-blue {
+  background-color: #112031;
 }
 
 
@@ -83,6 +102,11 @@ p {
 
 #main-menu ul {
   list-style: none;
+}
+
+#main-menu li, #main-menu li a {
+	margin: 0;
+	padding: 0;
 }
 
 #main-menu a {

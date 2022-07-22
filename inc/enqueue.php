@@ -29,6 +29,7 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
 
 		$css_version = $theme_version . '.' . filemtime( get_template_directory() . $theme_styles );
 		wp_enqueue_style( 'understrap-styles', get_template_directory_uri() . $theme_styles, array(), $css_version );
+		wp_enqueue_style( 'google-font', 'https://fonts.googleapis.com/css?family=Didact Gothic&display=swap', false );
 
 		wp_enqueue_script( 'jquery' );
 
@@ -41,3 +42,4 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
 } // End of if function_exists( 'understrap_scripts' ).
 
 add_action( 'wp_enqueue_scripts', 'understrap_scripts' );
+

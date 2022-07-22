@@ -17087,11 +17087,6 @@ figure.woocommerce-product-gallery__wrapper {
   clip: auto;
 }
 
-body {
-  margin: 30px;
-  background: #fff;
-}
-
 h1, .h1 {
   font-size: 4rem;
   line-height: 1;
@@ -17136,6 +17131,30 @@ p {
   height: 20px;
 }
 
+.blue-theme h1, .blue-theme .h1 {
+  color: #1A374D;
+}
+
+.dark-blue {
+  background-color: #1A374D;
+}
+
+.slate {
+  background-color: #406882;
+}
+
+.lighter-blue {
+  background-color: #6998AB;
+}
+
+.lightest-blue {
+  background-color: #B1D0E0;
+}
+
+.different-blue {
+  background-color: #112031;
+}
+
 #main-menu {
   font-family: "Didact Gothic", sans-serif;
   font-size: 2rem;
@@ -17173,6 +17192,11 @@ p {
 
 #main-menu ul {
   list-style: none;
+}
+
+#main-menu li, #main-menu li a {
+  margin: 0;
+  padding: 0;
 }
 
 #main-menu a {
