@@ -19,7 +19,8 @@ defined( 'ABSPATH' ) || exit;
 		<?php
 		the_content();
 		divh_home_repeater();
-		understrap_link_pages();
+		divh_home_posts('News');
+		divh_home_posts('Research');
 		?>
 
 	</div><!-- .entry-content -->

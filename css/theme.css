@@ -17114,6 +17114,10 @@ p {
   width: 50vw;
 }
 
+.entry-title {
+  color: #1A374D;
+}
+
 .cap {
   text-transform: uppercase;
 }

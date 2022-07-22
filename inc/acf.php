@@ -8,7 +8,10 @@
 function divh_home_repeater(){
     // Check rows exists.
     if( have_rows('home_sections') ):
-        echo "<div class='col-md-8'> <div class='colors'>
+            $tag_line = get_bloginfo('description');
+        echo "<div class='col-md-8'> 
+            <div class='tag-line'><p>{$tag_line}</p></div>
+            <div class='colors'>
           <div class='color dark-blue'></div>
           <div class='color slate'></div>
           <div class='color lighter-blue'></div>
@@ -17,12 +20,12 @@ function divh_home_repeater(){
         // Loop through rows.
         while( have_rows('home_sections') ) : the_row();
 
-            // Load sub field value.
             $title = get_sub_field('title');
+            $id = sanitize_title($title);
             $content = get_sub_field('content');
             // Do something...
             echo "
-                <div class='home-section'><h2>{$title}</h2>{$content}</div>           
+                <div class='home-section'><h2 id='{$id}'>{$title}</h2>{$content}</div>           
             ";
         // End loop.
         endwhile;
