@@ -17144,20 +17144,35 @@ p {
   list-style: none;
   background-color: #1A374D;
   padding: 55px;
-  box-shadow: 10px 10px #efefef;
+  box-shadow: 10px 10px #B1D0E0;
   position: relative;
 }
 
 #main-menu:after {
   content: "";
   position: absolute;
-  bottom: -52px;
+  bottom: -100px;
   left: 90px;
   width: 100px;
   height: 100px;
-  background: #be2832;
-  background: linear-gradient(43deg, rgba(190, 40, 50, 0) 49%, #1A374D 49%);
+  background-image: url(https://experiments.middcreate.net/extras/imgs/message-tail.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right top;
   display: block;
+}
+
+.dots {
+  display: block;
+  position: absolute;
+  width: 80px;
+  height: 20px;
+  right: 50px;
+  bottom: 60px;
+}
+
+#main-menu ul {
+  list-style: none;
 }
 
 #main-menu a {
@@ -17165,15 +17180,79 @@ p {
   text-decoration: none;
 }
 
-/* .sidebar {
-  background-image: url(https://experiments.middcreate.net/extras/imgs/arrow-right.svg);
-  background-repeat: no-repeat;
-  background-size: 80%;
-  background-position: bottom center;
-} */
 .img-left {
   display: inline-block;
   float: left;
+}
+
+img.sidebar {
+  max-width: 100%;
+  height: auto;
+  margin: 120px 10px;
+  position: relative;
+}
+
+.sidebar-img {
+  width: 100%;
+  height: auto;
+  padding: 93px 40px 30px 40px;
+}
+
+#c1 {
+  stroke: red 1px solid;
+}
+
+#c1 {
+  -webkit-animation: fadeit 1700ms ease 0ms forwards;
+  animation: fadeit 1700ms ease 0ms forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+#c2 {
+  -webkit-animation: fadeit 1700ms ease 0ms forwards;
+  animation: fadeit 1700ms ease 0ms forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms;
+}
+
+#c3 {
+  -webkit-animation: fadeit 1700ms ease 0ms forwards;
+  animation: fadeit 1700ms ease 0ms forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: 1000ms;
+  animation-delay: 1000ms;
+}
+
+.cls-1 {
+  fill: #fff;
+}
+
+@-webkit-keyframes fadeit {
+  0% {
+    fill-opacity: 0.3;
+  }
+  50% {
+    fill-opacity: 1;
+  }
+  100% {
+    fill-opacity: 0.3;
+  }
+}
+
+@keyframes fadeit {
+  0% {
+    fill-opacity: 0.3;
+  }
+  50% {
+    fill-opacity: 1;
+  }
+  100% {
+    fill-opacity: 0.3;
+  }
 }
 
 /*# sourceMappingURL=theme.css.map */

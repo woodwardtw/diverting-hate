@@ -21,6 +21,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-4">
+				<div id="main-menu">
+		        <ul>
+		          <li><a href="#mission">Mission</a></li>
+		          <li><a href="#research">Research</a></li>
+		          <li><a href="#team">Our Team</a></li>
+		          <li><a href="#partnership">Partners</a></li>
+		          <li><a href="#press">Press</a></li>
+		        </ul>
+		        <div class="dots">
+			        <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 939.2 216.2"><g id="Layer_1-2"><circle stroke="#1A374D" id="c1" class="cls-1" cx="108" cy="108" r="108"/><circle stroke="#1A374D" id="c2" class="cls-1" cx="469" cy="108" r="108"/><circle stroke="#1A374D" id="c3" class="cls-1" cx="831" cy="108" r="108"/></g></svg>
+			      </div>
+			  </div>
+
 			</div>
 			<div class="col-md-8">
 				<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url">
