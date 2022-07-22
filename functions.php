@@ -59,7 +59,8 @@ function divh_home_posts($category){
 	  // Do Stuff
 		$title = get_the_title();
 		$link = get_the_permalink();
-		echo "<div class='col-md-3'><a href='{$link}'><h3>{$title}</h3></a></div>";
+		$excerpt = get_the_excerpt();
+		echo "<div class='col-md-3'><div class='home-box'><a href='{$link}'><h3>{$title}</h3></a>{$excerpt}</div></div>";
 	endwhile;
 	echo "</div>";
 	endif;
