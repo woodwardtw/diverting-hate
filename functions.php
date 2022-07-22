@@ -62,6 +62,8 @@ function divh_home_posts($category){
 		$excerpt = get_the_excerpt();
 		echo "<div class='col-md-3'><div class='home-box'><a href='{$link}'><h3>{$title}</h3></a>{$excerpt}</div></div>";
 	endwhile;
+	$cat_link = site_url() . "/category/{$category}/";
+	echo "<div class='col-md-4 offset-md-4'><a href='$cat_link' class='home-button'>See all {$category}</a></div>";
 	echo "</div>";
 	endif;
 

@@ -187,3 +187,16 @@ img.sidebar {
 .home-row h2 {
 	margin-bottom: 30px; 
 }
+
+.home-button {
+	font-size: 1.7rem;
+	padding: 10px 15px;
+	color: #fff;
+	background-color: $darkblue;
+	border-radius: 10px;
+	width: 230px;
+	text-align: center;
+	text-decoration: none;
+	margin: 30px auto;
+	display: inline-block;
+}
