@@ -76,10 +76,10 @@ p {
   width: 100%;
   padding: 10px 0;
   margin-bottom: 70px;
-  background-image: url(../imgs/left-corner.svg);
-  background-size: contain;
-  background-position: left bottom;
-  background-repeat: no-repeat;
+  // background-image: url(../imgs/left-corner.svg), url(../imgs/right-corner.svg);
+  // background-size: contain, contain;
+  // background-position: left bottom, right bottom;
+  // background-repeat: no-repeat, no-repeat;
 }
 
 .tag-line p {
