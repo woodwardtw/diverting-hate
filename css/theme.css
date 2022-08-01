@@ -17220,6 +17220,12 @@ p {
   padding: 0;
 }
 
+#main-menu li a {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #B1D0E0;
+  text-decoration-color: #B1D0E0;
+}
+
 #main-menu a {
   color: #fff;
   text-decoration: none;

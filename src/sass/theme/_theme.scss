@@ -132,6 +132,11 @@ p {
 	padding: 0;
 }
 
+#main-menu li a {
+  text-decoration: underline;
+  text-decoration-color: $lightblue;
+}
+
 #main-menu a {
   color: #fff;
   text-decoration: none;
