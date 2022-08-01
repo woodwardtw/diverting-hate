@@ -79,6 +79,7 @@ function divh_featured_img($post_id, $title){
 	if(has_post_thumbnail()){
 		return get_the_post_thumbnail($post_id,'large');
 	} else {
-		return "<img src='' alt='Featured image for {$title}.'>";
+		$path = get_template_directory_uri();
+		return "<img src='{$path}/imgs/default.png' alt='Featured image for {$title}.'>";
 	}
 }
