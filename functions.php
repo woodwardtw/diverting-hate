@@ -52,10 +52,10 @@ function divh_home_posts($category){
 		'posts_per_page' => '4'
 	);
 	$the_query = new WP_Query( $args );
-
+	$clean_cat = sanitize_title($category);
 // The Loop
 	if ( $the_query->have_posts() ) :
-	echo "<div class='row home-row'><h2>{$category}</h2>";
+	echo "<div class='row home-row'><h2 id='{$clean_cat}'>{$category}</h2>";
 	while ( $the_query->have_posts() ) : $the_query->the_post();
 	  // Do Stuff
 		$title = get_the_title();
