@@ -11,6 +11,8 @@ h2 {
   line-height: 1;
   margin: 30px 30px 0 30px;
   display: inline-block;
+  border-left: 12px solid $orange;
+  padding-left: 10px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -95,7 +97,7 @@ p {
   list-style: none;
   background-color: #1A374D;
   padding: 55px;
-  box-shadow: 10px 10px #B1D0E0;
+  box-shadow: 10px 10px $lightblue;
   position:relative;
 }
 

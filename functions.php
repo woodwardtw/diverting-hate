@@ -49,7 +49,7 @@ foreach ( $understrap_includes as $file ) {
 function divh_home_posts($category){
 	$args = array(
 		'category_name' => $category,
-		'posts_per_page' => '4'
+		'posts_per_page' => '3'
 	);
 	$the_query = new WP_Query( $args );
 	$clean_cat = sanitize_title($category);
@@ -58,10 +58,13 @@ function divh_home_posts($category){
 	echo "<div class='row home-row'><h2 id='{$clean_cat}'>{$category}</h2>";
 	while ( $the_query->have_posts() ) : $the_query->the_post();
 	  // Do Stuff
+		global $post;
+		$post_id = $post->ID;
 		$title = get_the_title();
 		$link = get_the_permalink();
 		$excerpt = get_the_excerpt();
-		echo "<div class='col-md-3'><div class='home-box'><a href='{$link}'><h3>{$title}</h3></a>{$excerpt}</div></div>";
+		$featured = divh_featured_img($post_id, $title);
+		echo "<div class='col-md-4'><div class='home-box'>{$featured}<a href='{$link}'><h3>{$title}</h3></a>{$excerpt}</div></div>";
 	endwhile;
 	$cat_link = site_url() . "/category/{$category}/";
 	echo "<div class='col-md-4 offset-md-4'><a href='$cat_link' class='home-button'>See all {$category}</a></div>";
@@ -70,4 +73,12 @@ function divh_home_posts($category){
 
 	// Reset Post Data
 	wp_reset_postdata();
+}
+
+function divh_featured_img($post_id, $title){
+	if(has_post_thumbnail()){
+		return get_the_post_thumbnail($post_id,'large');
+	} else {
+		return "<img src='' alt='Featured image for {$title}.'>";
+	}
 }

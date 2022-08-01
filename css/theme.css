@@ -11,7 +11,7 @@
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
   --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
+  --bs-orange: #CD4631;
   --bs-yellow: #ffc107;
   --bs-green: #198754;
   --bs-teal: #20c997;
@@ -13687,12 +13687,12 @@ a.skip-link {
 
 .has-orange-color,
 .has-orange-color:visited {
-  color: #fd7e14;
+  color: #CD4631;
 }
 
 .has-orange-background-color {
-  background-color: #fd7e14;
-  border-color: #fd7e14;
+  background-color: #CD4631;
+  border-color: #CD4631;
 }
 
 .has-yellow-color,
@@ -17099,6 +17099,8 @@ h2, .h2 {
   line-height: 1;
   margin: 30px 30px 0 30px;
   display: inline-block;
+  border-left: 12px solid #CD4631;
+  padding-left: 10px;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
@@ -17164,7 +17166,7 @@ p {
 
 .tag-line {
   text-align: center;
-  background-color: #B1D0E0;
+  background-color: #a1dfff;
   width: 100%;
   padding: 10px 0;
   margin-bottom: 70px;
@@ -17183,7 +17185,7 @@ p {
   list-style: none;
   background-color: #1A374D;
   padding: 55px;
-  box-shadow: 10px 10px #B1D0E0;
+  box-shadow: 10px 10px #a1dfff;
   position: relative;
 }
 
@@ -17222,8 +17224,8 @@ p {
 
 #main-menu li a {
   text-decoration: underline;
-  -webkit-text-decoration-color: #B1D0E0;
-  text-decoration-color: #B1D0E0;
+  -webkit-text-decoration-color: #a1dfff;
+  text-decoration-color: #a1dfff;
 }
 
 #main-menu a {
@@ -17311,7 +17313,7 @@ img.sidebar {
 
 .home-box {
   padding: 30px;
-  border: 1px solid #B1D0E0;
+  border: 1px solid #a1dfff;
   margin-bottom: 30px;
   height: 100%;
   position: relative;

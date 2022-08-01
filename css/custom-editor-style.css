@@ -428,7 +428,7 @@ progress {
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
   --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
+  --bs-orange: #CD4631;
   --bs-yellow: #ffc107;
   --bs-green: #198754;
   --bs-teal: #20c997;
@@ -863,12 +863,12 @@ progress {
 
 .has-orange-color,
 .has-orange-color:visited {
-  color: #fd7e14;
+  color: #CD4631;
 }
 
 .has-orange-background-color {
-  background-color: #fd7e14;
-  border-color: #fd7e14;
+  background-color: #CD4631;
+  border-color: #CD4631;
 }
 
 .has-yellow-color,
