@@ -5,18 +5,17 @@
  * @package Understrap
  */
 
+function divh_tagline(){
+    $tag_line = get_bloginfo('description');
+    if($tag_line){
+        return "<div class='col-md-12'><div class='tag-line'><p>{$tag_line}</p></div></div>";
+    }
+}
+
 function divh_home_repeater(){
     // Check rows exists.
     if( have_rows('home_sections') ):
-            $tag_line = get_bloginfo('description');
-        echo "<div class='col-md-8'> 
-            <div class='tag-line'><p>{$tag_line}</p></div>
-            <div class='colors'>
-          <div class='color dark-blue'></div>
-          <div class='color slate'></div>
-          <div class='color lighter-blue'></div>
-          <div class='color lightest-blue'></div>
-        </div>";
+        echo "<div class='col-md-8'>";
         // Loop through rows.
         while( have_rows('home_sections') ) : the_row();
 
@@ -25,7 +24,10 @@ function divh_home_repeater(){
             $content = get_sub_field('content');
             // Do something...
             echo "
-                <div class='home-section'><h2 id='{$id}'>{$title}</h2>{$content}</div>           
+                <div class='home-section'><h2 id='{$id}'>{$title}</h2>
+                {$content}
+                </div> 
+
             ";
         // End loop.
         endwhile;

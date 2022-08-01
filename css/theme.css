@@ -17162,6 +17162,14 @@ p {
   background-color: #112031;
 }
 
+.tag-line {
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: #B1D0E0;
+  width: 100%;
+  padding: 20px 0;
+}
+
 #main-menu {
   font-family: "Didact Gothic", sans-serif;
   font-size: 2rem;
@@ -17294,6 +17302,7 @@ img.sidebar {
   border: 1px solid #B1D0E0;
   margin-bottom: 30px;
   height: 100%;
+  position: relative;
 }
 
 .home-row h2, .home-row .h2 {
@@ -17311,6 +17320,13 @@ img.sidebar {
   text-decoration: none;
   margin: 30px auto;
   display: block;
+}
+
+.understrap-read-more-link {
+  position: absolute;
+  width: 80%;
+  bottom: 15px;
+  left: 10%;
 }
 
 /*# sourceMappingURL=theme.css.map */

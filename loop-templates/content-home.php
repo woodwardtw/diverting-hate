@@ -12,6 +12,7 @@ defined( 'ABSPATH' ) || exit;
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<div class="row">
+		<?php echo divh_tagline();?>
 		<div class="col-md-4">
 			<img src="https://experiments.middcreate.net/extras/imgs/loop-stack-3d.png" class="sidebar-img">
 		</div>
