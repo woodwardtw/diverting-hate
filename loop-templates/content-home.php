@@ -18,10 +18,10 @@ defined( 'ABSPATH' ) || exit;
 		</div>
 
 		<?php
-		the_content();
 		divh_home_repeater();
 		divh_home_posts('News');
 		divh_home_posts('Research');
+		the_content();
 		?>
 
 	</div><!-- .entry-content -->
