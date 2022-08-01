@@ -17312,12 +17312,16 @@ img.sidebar {
 }
 
 .home-box {
-  padding: 30px;
+  padding: 40px 30px;
   border: 1px solid #406882;
   margin-bottom: 30px;
   height: 100%;
   position: relative;
   box-shadow: 10px 10px #1A374D;
+}
+
+.home-box h3, .home-box .h3 {
+  margin: 20px 0;
 }
 
 .home-row h2, .home-row .h2 {
@@ -17340,7 +17344,7 @@ img.sidebar {
 .understrap-read-more-link {
   position: absolute;
   width: 80%;
-  bottom: 15px;
+  bottom: 20px;
   left: 10%;
   background-color: #CD4631;
   border: #CD4631;
