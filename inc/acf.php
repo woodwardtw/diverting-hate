@@ -47,6 +47,15 @@ function divh_home_img($image){
 
 }
 
+function divh_supporter_statement(){
+    if(get_field('supporter_statement')){
+        $statement = get_field('supporter_statement');
+        return "<div class='col-md-12'>
+                <div class='support-statement'>{$statement}</div>
+        </div>";
+    }
+}
+
 function divh_supporters_repeater(){
     $html = '';
     if( have_rows('supporters') ):
@@ -69,8 +78,10 @@ function divh_supporters_repeater(){
             // Do something...
         // End loop.
         endwhile;
+        $statement = divh_supporter_statement();
         echo "<div class='row home-row'>
             <h2 id='supporters'>Supporters</h2>
+            {$statement}
             {$html}
         </div>";
         // No value.
