@@ -70,7 +70,7 @@ function divh_supporters_repeater(){
             $html .= "<div class='supporter col-md-2'>
                     <div class='home-box'>
                         <a href='{$link}'>
-                            <img src='{$img}'>
+                            <img src='{$img}' alt='Logo for {$title}.'>
                             <h3>{$title}</h3>
                         </a>
                     </div>
