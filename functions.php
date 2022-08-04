@@ -60,12 +60,8 @@ function divh_home_posts($category){
 	  // Do Stuff
 		global $post;
 		$post_id = $post->ID;
-		$title = get_the_title();
-		if (get_field('media_url', $post_id)){
-			$link = get_field('media_url', $post_id);
-		} else {
-			$link = get_the_permalink();
-		}
+		$title = get_the_title();	
+		$link = get_the_permalink();
 		$excerpt = get_the_excerpt();
 		$featured = divh_featured_img($post_id, $title);
 		echo "<div class='col-md-4'><div class='home-box'>{$featured}<a href='{$link}'><h3>{$title}</h3></a>{$excerpt}</div></div>";
