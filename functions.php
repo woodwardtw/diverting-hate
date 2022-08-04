@@ -55,13 +55,17 @@ function divh_home_posts($category){
 	$clean_cat = sanitize_title($category);
 // The Loop
 	if ( $the_query->have_posts() ) :
-	echo "<div class='row home-row'><h2 id='{$clean_cat}'>{$category}</h2>";
+	echo "<div class='row home-row {$clean_cat}-row'><h2 id='{$clean_cat}'>{$category}</h2>";
 	while ( $the_query->have_posts() ) : $the_query->the_post();
 	  // Do Stuff
 		global $post;
 		$post_id = $post->ID;
 		$title = get_the_title();
-		$link = get_the_permalink();
+		if (get_field('media_url', $post_id)){
+			$link = get_field('media_url', $post_id);
+		} else {
+			$link = get_the_permalink();
+		}
 		$excerpt = get_the_excerpt();
 		$featured = divh_featured_img($post_id, $title);
 		echo "<div class='col-md-4'><div class='home-box'>{$featured}<a href='{$link}'><h3>{$title}</h3></a>{$excerpt}</div></div>";

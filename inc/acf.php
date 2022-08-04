@@ -91,6 +91,20 @@ function divh_supporters_repeater(){
     }
 
 
+//make news permalink go to media URL rather than internal post link
+
+function divh_news_permalink_filter($url, $post) {
+    $post_id = $post->ID;
+    write_log($post_id);
+    if(get_field('media_url', $post_id)){
+        $media_url = get_field('media_url', $post_id);
+        return $media_url;
+    } else {
+        return $url;
+    }
+}
+add_filter('the_permalink', 'divh_news_permalink_filter', 10, 2);    
+
 
 //save acf json
 add_filter('acf/settings/save_json', 'divh_json_save_point');
