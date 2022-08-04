@@ -17350,6 +17350,10 @@ img.sidebar {
   border: #CD4631;
 }
 
+.supporter h3, .supporter .h3 {
+  font-size: 1.5rem;
+}
+
 @media (max-width: 768px) {
   .dh-logo {
     margin: 80px 0;

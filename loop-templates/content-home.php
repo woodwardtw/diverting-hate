@@ -21,6 +21,7 @@ defined( 'ABSPATH' ) || exit;
 		divh_home_repeater();
 		divh_home_posts('News');
 		divh_home_posts('Research');
+		divh_supporters_repeater();
 		the_content();
 		?>
 

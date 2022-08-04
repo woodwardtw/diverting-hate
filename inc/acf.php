@@ -47,6 +47,40 @@ function divh_home_img($image){
 
 }
 
+function divh_supporters_repeater(){
+    $html = '';
+    if( have_rows('supporters') ):
+
+        // Loop through rows.
+        while( have_rows('supporters') ) : the_row();
+
+            // Load sub field value.
+            $title = get_sub_field('supporter_title');
+            $link = get_sub_field('supporter_link');
+            $img = get_sub_field('supporter_logo');
+            $html .= "<div class='supporter col-md-2'>
+                    <div class='home-box'>
+                        <a href='{$link}'>
+                            <img src='{$img}'>
+                            <h3>{$title}</h3>
+                        </a>
+                    </div>
+            </div>";
+            // Do something...
+        // End loop.
+        endwhile;
+        echo "<div class='row home-row'>
+            <h2 id='supporters'>Supporters</h2>
+            {$html}
+        </div>";
+        // No value.
+        else :
+            // Do something...
+        endif;
+    }
+
+
+
 //save acf json
 add_filter('acf/settings/save_json', 'divh_json_save_point');
  
