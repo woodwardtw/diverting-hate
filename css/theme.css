@@ -17337,8 +17337,15 @@ img.sidebar {
   width: 230px;
   text-align: center;
   text-decoration: none;
-  margin: 30px auto;
+  margin: 50px auto;
   display: block;
+  transition: 0.4s all ease;
+  border: 2px solid #1A374D;
+}
+
+.home-button:hover {
+  color: #fff;
+  border: 2px solid #CD4631;
 }
 
 .understrap-read-more-link {
