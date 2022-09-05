@@ -83,3 +83,9 @@ function divh_featured_img($post_id, $title){
 		return "<img src='{$path}/imgs/default.png' alt='Featured image for {$title}.'>";
 	}
 }
+
+
+function dh_custom_excerpt_length( $length ) {
+	return 15;
+}
+add_filter( 'excerpt_length', 'dh_custom_excerpt_length', 999 );
