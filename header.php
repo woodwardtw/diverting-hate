@@ -19,6 +19,8 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="icon" href="<?php echo get_stylesheet_directory_uri();?>/imgs/favicon.ico" sizes="any">
+	<link rel="icon" href="<?php echo get_stylesheet_directory_uri();?>/imgs/favicon.svg" type="image/svg+xml">
 	<?php wp_head(); ?>
 </head>
 
